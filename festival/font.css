@@ -1,0 +1,2 @@
+@charset "utf-8";
+@font-face {font-family:"ns";src:local("./font/NanumSquare") url("./font/NanumSquare.eot") format("embedded-opentype"),url("./font/NanumSquare.woff") format("woff") url("./font/NanumSquare.ttf") format("truetype");font-weight:400; font-style:normal;}
