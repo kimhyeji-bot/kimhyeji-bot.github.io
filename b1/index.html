@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>보령시 문화관광</title>
+    <meta name="title" content="보령시 문화관광">
+    <meta name="keywords" content="보령시,보령시 문화관광,대천해수욕장,대천여행,여행">
+    <meta name="description" content="보령시 문화관광 사이트 입니다.">
+    <meta property="og:tit" content="보령시 문화관광">
+    <meta property="og:decription" content="보령시 문화관광 사이트 입니다.">
+    <meta property="og:imege" content="">
+    <link href="./image/logo1.png" type="image/x-icon" rel="shortcut icon">
+    <link rel="icon" type="image/png" sizes="36x36" href="./image/logo1.png">   
+    <link rel="shortcut icon" type="image/x-icon" sizes="180x180" href="./image/logo3.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./image/logo3.png">
+    <link rel="shortcut icon" type="image/png" sizes="180x180" href="./imege/logo3.png">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    
+    <style>
+* { margin: 0; padding: 0; }
+
+        body, html { width: 100%; height: 100%; font-family: 'Nanum Gothic', sans-serif; }
+
+        ul { list-style: none;}
+
+        a { text-decoration: none;}
+
+        button, a, input { border: 0; outline: 0;}
+
+        .wrap { width: 100%; height: 100%;}
+
+        .page { clear: both; width: 100%; height: 100%; }
+
+        .page_wrap { width: 1280px; margin: 0 auto; }
+
+        #tnb { width: 100%; height: 42px; background: rgba(0,0,0,0.2); position: absolute; top: 0; left: 0; z-index: 60;}
+
+        .right.menu {float: right; margin-right: 120px;}
+
+        #tnb li {float: left; margin-left: 25px;}
+
+        #tnb li a {display: block; color: #333; line-height: 42px; font-size: 14px; color: #fff;}
+
+        .lst_bnt{background-image: url(./image/menu.png); display: block;width: 57px; height: 51px;  position: fixed; top: 120px; left: 150px; z-index: 90; text-indent: -9999px; cursor: pointer;}
+
+        #gnb {position: fixed; top: 0; left: -250px; z-index: 99; width: 240px; height: 100%; background-color: rgba(255,255,255,0.8); transition: 0.5s;}
+
+        #ck1:checked ~ #gnb {left: 0;}
+
+        #ck1 {display: none;}
+        
+        #vdo{width: 100vw; height: 100vh; background-color:rgba(0,0,0,0.8);}
+        video{width:100%}
+       
+        
+        
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <nav id="tnb">
+            <ul class="right menu">
+                <li><a href="tnb_menu1.html">열린 사이트</a></li>
+                <li><a href="tnb_menu2.html">홍보 SNS</a></li>
+                <li><a href="tnb_menu3.html">사이트 맵</a></li>
+                
+            </ul>
+        </nav>
+        <input type="checkbox" id="ck1">
+        <label for="ck1" class="lst_bnt"></label>
+        <nav id="gnb">
+           <label for="ck1" class="close_bnt"></label>
+            <ul class="main">
+                <li><a href="gnb_main1.html">산</a></li>
+                <li><a href="gnb_main2.html">바다</a></li>
+                <li><a href="gnb_main3.html">섬</a></li>
+            </ul>
+
+        <ul class="bottom">
+            <li><a href="tnb_menu1.html">열린 사이트</a></li>
+            <li><a href="tnb_menu2.html">홍보 SNS</a></li>
+            <li><a href="tnb_menu3.html">사이트 맵</a></li>
+        </ul>
+        </nav>
+        <div class="page" id="page1">
+            <figure id="vdo">
+                <video src="./image/video1.mp4"></video>
+            </figure>
+            <section class="page_wrap">
+                <h2 class="tit">
+                    <form action="" id="frm1">
+                    <input type="text" id="keyword">
+                    <input type="submit" id="search">
+                    </form>
+                </h2>
+            </section>
+        </div>
+        <div class="page" id="page2">
+            <section class="page_wrap">
+                <h2 class="page_tit">보령시 사계절 축제</h2>
+                <figure>
+                    <ul class="img_box">
+                        <li>
+                            <img src="./image/spring.jpg" alt="주산벚꽃축제">
+                            <div class="tit_box">
+                                <h3 class="vs_tit"></h3>
+                                <p class="vs_com"></p>
+                                <a href="" class="more"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./image/summer.jpg" alt="보령머드축제">
+                            <div class="tit_box">
+                                <h3 class="vs_tit"></h3>
+                                <p class="vs_com"></p>
+                                <a href="" class="more"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./image/fall.jpg" alt="대하전어축제">
+                            <div class="tit_box">
+                                <h3 class="vs_tit"></h3>
+                                <p class="vs_com"></p>
+                                <a href="" class="more"></a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./image/winter.jpg" alt="대천사랑축제">
+                            <div class="tit_box">
+                                <h3 class="vs_tit"></h3>
+                                <p class="vs_com"></p>
+                                <a href="" class="more"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </figure>
+            </section>
+        </div>
+        <div class="page" id="3"></div>
+        <section class="page_wrap">
+            <h2 class="page_tit">테마별 관광지</h2>
+                <ul class="thum_lst">
+                    <li class="col"><a href=""><img src="./image/island.png" alt="섬이미지"><p>섬</p></a></li>
+                    <li class="col"><a href=""><img src="./image/beach.png" alt="바다이미지"><p>바다</p></a></li>
+                    <li class="col"><a href=""><img src="./image/trees.png" alt="산이미지"><p>산</p></a></li>
+                    
+                </ul>
+            
+        </section>
+        <footer id="ft">
+            <ul class="fnb">
+                <li><a href="">열린 사이트</a></li>
+                <li><a href="">홍보 SNS</a></li>
+                <li><a href="">사이트 맵</a></li>
+            </ul>
+            <p class="copyright">copyright</p>
+        </footer>
+        
+    </div>
+    
+</body>
+</html>
