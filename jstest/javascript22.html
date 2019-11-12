@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+        <h2 class="tit">navigateor 객체</h2>
+        <div id="tit"></div>
+    </div>
+    <script>
+    for(var key in navigator){
+        document.write("<br>"+key+":"+navigator)
+    }
+    var data = document.getElementById("txt")
+    var txt = "<br>현재 사용중인 브라우저 이름 : "+navigator.appName+"<br>";
+    txt += "해당 브라우저의 코드명 : "+navigator.appCodeName+"<br>";
+    txt += "현재 사용중인 브라우저의 버전 정보 : "+navigator.appVersion+"<br>";
+    txt += "userAgent 프로 퍼티로 알수 있는 추가 정보 : "+navigator.userAgent+"<br>";
+    txt += "현재 브라우저가 실행되고 있는 운영체제 :"+navigator.platform+"<br>";
+    txt += "현재 브라우저의 기본 언어 설정 : "+navigator.language+"<br>";
+    txt += "브라우저의 제작사 :"+navigator.vendor+"<br>";
+    txt += "현재 기기의 최대 터치점 :"+navigator.maxTouchPoints+"<br>";
+    txt += "현재 브라우저의 엔진 :"+navigator.product+"<br>";
+    if(navigator.javaEnabled()){
+        txt += "현재 브라우저는 자바 애플릿을 실행할 수 있습니다.<br>";}
+        else{txt += "현재 브라우저는 자바 애플릿을 실행할 수 없습니다.<br>";}
+    if(navigator.cookieEnabled()){
+        txt += "현재 브라우저는 쿠키를 사용할 수 있습니다.<br>";}
+        else{txt +="현재 브라우저는 쿠키를 사용할 수 없습니다.<br>"}
+    var agent = navigator.userAgent.toLowerCase();
+    var browser = "정식 브라우저가 아님";
+    if(agent.indexOf("opera")!=-1){
+        browser = "오페라";
+    }else if(agent.indexOf("chrome")!=-1){
+        browser ="크롬";
+    }
+    else if(agent.indexOf("safari")!=-1){
+        browser ="사파리";
+    }
+    else if(agent.indexOf("firefox")!=-1){
+        browser = "파이어폭스";
+    }
+    else if(agent.indexOf("msie")!=-1){
+        brower = "인터넷 익스플로러";
+    }
+    var pc = "win 36|win 32|win 64|mac|macintel"; //pc 운영체제
+    var dev1,dev2;
+    if(navigator.platform){
+        if(px.indexOf(navigator.platform.toLowerCase())<0){
+            dev1 = "모바일";
+        }else {dev1 ="데스크탑";}
+    }
+    var mobile = new Array('iphone','ipod','brackberry','android','windows CE','windows SE','LG','mot','samsung','sonyericsson','mobile','symbian','opera mobi','opera mini','iemobile');
+    for(var key in mobile){
+        if(navigator.userAgent.match(mobile[key]!= null)){
+            dev2 = "모바일";
+        }else {dev2 = "데스크탑";}
+    }
+    data.innerHTML=txt
+    </script>
+</body>
+</html>
