@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+*{margin: 0;padding: 0;list-style: none;text-decoration: none;}
+html,body{width: 1920px;height: 1080px;}
+#main,#about,#skill,#portfolio,#contact{background-color: #000;width: 1920px;height: 1080px;}
+
+.hd{width: 1920px;height: 100px;position: fixed;background-color: transparent;}
+.menu_box{display: inline-block;float: right;}
+.menu li{display: inline-block;float: left;padding: 10px;margin-top: 45px;margin-right: 20px;}
+.it a{color: #fff;font-weight: bold;}
+.a_tit{text-align: center;font-size: 40px;color: #fff;}
+#main{width: 1920px;height: 1080px;}
+.tit_box{position: relative;top: 35%;left: 40%;padding: 50px;}
+.tit{position: absolute;color: #fff;text-align: center;top:0;left: 0;font-size: 100px;animation:ani1 5s infinite;}
+.tit2{position: absolute;color: #fff;text-align: center;top:150%;left:-50px;font-size: 100px;animation:ani1 5s infinite;}
+
+#about{width: 1920px;height: 1080px;background-color: navy;}
+.col_fr{position: relative;width: 1000px;margin: 0 auto;padding: 50px;top:0px;}
+.col1{position: absolute;width: 500px;height: 500px;top: 215%;left:-200px;}
+.col2{position: absolute;border: 2px solid red;width: 600px;height: 800px;top: 100%;left: 650px;}
+.vs{border: 5px solid #fff;width: 300px;height: 300px;background-image: url(./img/port1-1.jpg);background-position: center;border-radius: 150px;margin-left: 100px;}
+@keyframes ani1{
+    0%{color:#ff2a2a;}
+    15%{color:#ff7a2a;}
+    30%{color:#ffc52a;}
+    45%{color:#43ff2a;}
+    60%{color:#2a89ff;}
+    75%{color:#202082;}
+    90%{color:#6b2aff;}
+    100%{color:#e82aff;}
+}
+
